@@ -1,6 +1,0 @@
-python-telegram-bot
-pandas
-pillow
-pdfplumber
-pytesseract
-google-generativeai
