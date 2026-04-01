@@ -9,7 +9,7 @@ TOKEN = "8297282007:AAGZTiGNGuMaEVjjpF1gNO3VnrL0bAbYfGc"
 GEMINI_API = "AIzaSyDwq9YEiP6uqD_MgkTk8CmoFG6a9mKDHes"
 
 genai.configure(api_key=GEMINI_API)
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel("gemini-1.5")
 
 users_allowed = set()
 
