@@ -67,3 +67,10 @@ app.add_handler(CommandHandler("permit", permit))
 app.add_handler(MessageHandler(filters.PHOTO, image_handler))
 
 app.run_polling()
+
+python-telegram-bot
+pandas
+pillow
+pdfplumber
+pytesseract
+google-generativeai
