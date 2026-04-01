@@ -705,7 +705,16 @@ def main():
     app.add_handler(CallbackQueryHandler(callback_handler))
 
     print("🤖 Bot চালু হয়েছে!")
-    app.run_polling(drop_pending_updates=True)
+    PORT = int(os.environ.get("PORT", 5000))
+WEBHOOK_URL = f"https://telegrambotrenderlast.onrender.com/{TOKEN}"  # replace with your Render app URL
+
+# Run Webhook
+app.run_webhook(
+    listen="0.0.0.0",
+    port=PORT,
+    url_path=TOKEN,
+    webhook_url=WEBHOOK_URL
+)
 
 
 if __name__ == "__main__":
